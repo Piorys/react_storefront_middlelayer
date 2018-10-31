@@ -4,17 +4,14 @@ const mongoose = require("mongoose");
 
 const product = require("./routes/product.routes");
 const app = express();
+const conf = require("./config.js");
 
 //DB Connection
-//Please note that credentials are hardcoded for development purpose only
-let dbUser = "storefrontDb";
-let dbPass = "SignoVinces1";
+let dbUser = conf.database.dbUser;
+let dbPass = conf.database.dbPassword;
+let dbName = conf.database.dbName;
 let dev_db_url =
-  "mongodb://" +
-  dbUser +
-  ":" +
-  dbPass +
-  "@ds147213.mlab.com:47213/storefrontdb";
+  "mongodb://" + dbUser + ":" + dbPass + "@ds147213.mlab.com:47213/" + dbName;
 let mongoDb = process.env.MONGODB_URI || dev_db_url;
 
 mongoose.connect(mongoDb);
