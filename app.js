@@ -6,6 +6,7 @@ const product = require("./routes/product.routes");
 const app = express();
 
 //DB Connection
+//Please note that credentials are hardcoded for development purpose only
 let dbUser = "storefrontDb";
 let dbPass = "SignoVinces1";
 let dev_db_url =
