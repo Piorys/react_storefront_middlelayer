@@ -1,0 +1,32 @@
+{
+  "name": "react_store_middlelayer",
+  "version": "1.0.0",
+  "description": "Middlelayer for react storefront",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Piorys/react_storefront_middlelayer.git"
+  },
+  "keywords": [
+    "react",
+    "pwa",
+    "storefront",
+    "mongodb",
+    "express",
+    "crud"
+  ],
+  "author": "Piotr Ryszewski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Piorys/react_storefront_middlelayer/issues"
+  },
+  "homepage": "https://github.com/Piorys/react_storefront_middlelayer#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.8"
+  }
+}
